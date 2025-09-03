@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Booklet</title>
+    <script src="guadnce.js"></script>
+    <link rel="stylesheet" href="guadnce.css">
+ 
+</head>
+<body>
+    <div class="booklet" id="booklet">
+        <div class="header">
+            <h1>Career Guidance Booklet</h1>
+            <p>"तुमच्या करिअरच्या प्रवासासाठी एक संपूर्ण मार्गदर्शिका"</p>
+            <div class="author">By: Vyankatesh Vivekanand Jaware</div>
+            <div class="tagline">Your Career, Your Future – तुमचं करिअर, तुमचं भविष्य</div>
+        </div>
+        
+        <div class="container">
+            <div class="action-buttons">
+                <button class="btn" onclick="generatePDF()">
+                    <i class="fas fa-download"></i> Download PDF
+                </button>
+                <button class="btn btn-outline" onclick="window.print()">
+                    <i class="fas fa-print"></i> Print Booklet
+                </button>
+            </div>
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Preparing your PDF, please wait...</p>
+            </div>
+            
+            <div class="success-message" id="success">
+                <i class="fas fa-check-circle"></i> PDF downloaded successfully!
+            </div>
+            
+            <div class="section" id="index">
+                <h2 class="section-title">Index</h2>
+                <div class="index-grid">
+                    <div class="index-item" onclick="scrollToSection('introduction')">
+                        <h3>1. Introduction</h3>
+                        <p class="marathi-text">प्रस्तावना</p>
+                    </div>
+                    <div class="index-item" onclick="scrollToSection('career-after-10th')">
+                        <h3>2. Career after 10th</h3>
+                        <p class="marathi-text">१० वी नंतरचे पर्याय</p>
+                    </div>
+                    <div class="index-item" onclick="scrollToSection('career-after-12th')">
+                        <h3>3. Career after 12th</h3>
+                        <p class="marathi-text">१२ वी नंतरचे पर्याय</p>
+                    </div>
+                    <div class="index-item" onclick="scrollToSection('professional-courses')">
+                        <h3>4. Professional Courses</h3>
+                        <p class="marathi-text">व्यावसायिक अभ्यासक्रम</p>
+                    </div>
+                    <div class="index-item" onclick="scrollToSection('competitive-exams')">
+                        <h3>5. Competitive Exams</h3>
+                        <p class="marathi-text">स्पर्धा परीक्षा</p>
+                    </div>
+                    <div class="index-item">
+                        <h3>6. Future Skills</h3>
+                        <p class="marathi-text">भविष्यातील कौशल्ये</p>
+                    </div>
+                    <div class="index-item">
+                        <h3>7. Guidance & Contact</h3>
+                        <p class="marathi-text">मार्गदर्शन व संपर्क</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section" id="introduction">
+                <h2 class="section-title">Introduction</h2>
+                <div class="section-content">
+                    <div class="content-highlight">
+                        <h3><i class="fas fa-lightbulb"></i> Why Career Guidance Matters</h3>
+                        <p class="marathi-text">
+                            करिअर ही फक्त निवड नसून आयुष्याचा प्रवास आहे. या बुकलेटच्या माध्यमातून आम्ही तुम्हाला योग्य दिशा दाखवण्याचा प्रयत्न करत आहोत. आजच्या जगात शिक्षण आणि करिअर हे आयुष्य घडविण्याचे दोन महत्वाचे टप्पे आहेत. योग्य मार्गदर्शन न मिळाल्यामुळे अनेक मुलं-मुली आपली क्षमता वापरू शकत नाहीत.
+                        </p>
+                    </div>
+                    <p class="marathi-text">
+                        ही मार्गदर्शिका तुम्हाला विविध करिअर पर्यायांबद्दल माहिती देण्यासाठी तयार केली आहे. तुमच्या क्षमतेनुसार योग्य करिअर निवडण्यासाठी ही माहिती उपयुक्त ठरेल.
+                    </p>
+                    
+                    <div class="tip-box">
+                        <h4><i class="fas fa-star"></i> महत्वाचे सूचना</h4>
+                        <p class="marathi-text">ही माहिती तुमच्या करिअर निवडीसाठी मार्गदर्शन करते. अधिक अचूक माहितीसाठी संबंधित संस्थांशी थेट संपर्क साधावा.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section" id="career-after-10th">
+                <h2 class="section-title">Career after 10th</h2>
+                <div class="section-content">
+                    <p class="marathi-text">
+                        १०वी ही पहिली महत्वाची परीक्षा असते जिथे विद्यार्थ्यांना त्यांच्या भविष्याची दिशा ठरवायची असते. खालील तक्त्यात तुम्हाला विविध पर्यायांची माहिती मिळेल.
+                    </p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Option</th>
+                                <th>Description (माहिती)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Science (PCM/PCB)</strong></td>
+                                <td class="marathi-text">इंजिनियरिंग, मेडिकल, आयटी, फार्मसी, रिसर्चसाठी हा मार्ग</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Commerce</strong></td>
+                                <td class="marathi-text">बँकिंग, CA, CS, MBA, बिझनेस मॅनेजमेंट</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Arts / Humanities</strong></td>
+                                <td class="marathi-text">UPSC, MPSC, Journalism, Law, Psychology</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Diploma Courses</strong></td>
+                                <td class="marathi-text">तांत्रिक क्षेत्रात लवकर नोकरीच्या संधी</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ITI Courses</strong></td>
+                                <td class="marathi-text">व्यावसायिक प्रशिक्षणाच्या संधी</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Polytechnic</strong></td>
+                                <td class="marathi-text">अभियांत्रिकीच्या क्षेत्रात डिप्लोमा</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="tip-box">
+                        <h4><i class="fas fa-lightbulb"></i> सल्ला</h4>
+                        <p class="marathi-text">तुमची आवड, क्षमता आणि भविष्यातील संधींचा विचार करूनच शाखा निवडावी. केवळ मित्रांसोबत किंवा चलनाने शाखा निवडू नका.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section" id="career-after-12th">
+                <h2 class="section-title">Career after 12th</h2>
+                <div class="section-content">
+                    <p class="marathi-text">
+                        १२वी नंतर करिअरच्या अनेक दिशा उपलब्ध आहेत. योग्य मार्गनिदर्शन आवश्यक आहे.
+                    </p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Stream</th>
+                                <th>Career Options (करिअर पर्याय)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Science</strong></td>
+                                <td class="marathi-text">Engineering, Medical, Research, Biotechnology, Pharmacy</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Commerce</strong></td>
+                                <td class="marathi-text">Chartered Accountancy, Company Secretary, Business Management</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Arts</strong></td>
+                                <td class="marathi-text">Civil Services, Law, Journalism, Teaching, Social Work</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="content-highlight">
+                        <h3><i class="fas fa-graduation-cap"></i> महत्वाचे मार्गदर्शन</h3>
+                        <p class="marathi-text">१२वी नंतरच्या पर्यायांमध्ये तुमच्या आवडीचा विषय निवडणे खूप महत्वाचे आहे. चांगले काम करण्यासाठी तुम्हाला तो विषय आवडला पाहिजे.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section" id="professional-courses">
+                <h2 class="section-title">Professional Courses</h2>
+                <div class="section-content">
+                    <p class="marathi-text">
+                        व्यावसायिक अभ्यासक्रम करून तुम्ही विविध क्षेत्रांमध्ये करिअर करू शकता. हे अभ्यासक्रम तुम्हाला industry-ready बनवतात.
+                    </p>
+                    
+                    <ul class="marathi-text" style="margin-left: 20px; margin-top: 15px;">
+                        <li>Engineering (B.Tech/B.E)</li>
+                        <li>Medical (MBBS, BDS, BAMS)</li>
+                        <li>Management (BBA, MBA)</li>
+                        <li>Computer Applications (BCA, MCA)</li>
+                        <li>Designing (Fashion, Interior, Graphic)</li>
+                        <li>Hotel Management</li>
+                        <li>Law (LLB)</li>
+                    </ul>
+                    
+                    <div class="tip-box">
+                        <h4><i class="fas fa-info-circle"></i> माहिती</h4>
+                        <p class="marathi-text">प्रत्येक अभ्यासक्रमासाठी वेगवेगळी पात्रता आवश्यक असते. अधिक माहितीसाठी संबंधित कॉलेज किंवा विद्यापीठाची अधिकृत वेबसाइट तपासावी.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section" id="competitive-exams">
+                <h2 class="section-title">Competitive Exams</h2>
+                <div class="section-content">
+                    <p class="marathi-text">
+                        स्पर्धा परीक्षा ही सरकारी नोकऱ्या आणि उच्च शिक्षणासाठी महत्वाची आहेत. काही महत्वाच्या परीक्षा:
+                    </p>
+                    
+                    <ul class="marathi-text" style="margin-left: 20px; margin-top: 15px;">
+                        <li>UPSC - IAS, IPS, IFS</li>
+                        <li>MPSC - Maharashtra Civil Services</li>
+                        <li>SSC - Staff Selection Commission</li>
+                        <li>Banking Exams - IBPS, SBI</li>
+                        <li>Defense Exams - NDA, CDS</li>
+                        <li>Engineering Exams - JEE, MHT-CET</li>
+                        <li>Medical Exams - NEET</li>
+                    </ul>
+                    
+                    <div class="content-highlight">
+                        <h3><i class="fas fa-book"></i> तयारीचे टिप्स</h3>
+                        <p class="marathi-text">स्पर्धा परीक्षेची तयारी करताना नियोजन, सातत्य आणि चांगले अभ्यास साहित्य महत्वाचे आहे. दररोज किमान ४-५ तास अभ्यास करावा.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p>Contact: 9960340222</p>
+                    <p>Vyankatesh Vivekanand Jaware</p>
+                </div>
+                <div class="copyright">
+                    <p>© 2023 Career Guidance Booklet. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
